@@ -1,0 +1,48 @@
+{
+  "name": "person",
+  "plural": "people",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "userLdap": {
+      "type": "string"
+    },
+    "userSlack": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "string"
+    },
+    "birthday": {
+      "type": "date"
+    },
+    "admission": {
+      "type": "date"
+    },
+    "shutdown": {
+      "type": "date"
+    },
+    "active": {
+      "type": "boolean",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
