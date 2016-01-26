@@ -1,5 +1,6 @@
 module.exports = function(app) {
 /*
+  // create user
   var User = app.models.User;
   User.create({username: 'username', email: 'username@email.com',
       password: 'supersecret'}, function(err, user) {

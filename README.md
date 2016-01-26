@@ -10,6 +10,6 @@ vagrant ssh
 
 ### run app
 ```shell
-cd /vagrant/user-api
+cd /vagrant/
 node .
 ```
