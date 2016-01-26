@@ -4,7 +4,7 @@
   "main": "server/server.js",
   "scripts": {
     "start": "node .",
-    "pretest": "jshint ."
+    "lint": "jshint **.js"
   },
   "dependencies": {
     "compression": "^1.0.3",
@@ -22,6 +22,9 @@
   "repository": {
     "type": "",
     "url": ""
+  },
+  "engines": {
+    "node": "4.2.x"
   },
   "description": "user-api"
 }
