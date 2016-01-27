@@ -1,11 +1,10 @@
 module.exports = function(Person) {
-  Person.anniversary = function(cb) {
+  Person.birthdays = function(cb) {
     Person.getDataSource().connector.connect(function(err, db) {
       var collection = db.collection('person');
       var now = new Date();
       var day = now.getDate();
       var month = now.getMonth() + 1;
-      var year = now.getYear();
       collection.aggregate([
       {
         $project: {
@@ -35,6 +34,7 @@ module.exports = function(Person) {
   };
 
   Person.remoteMethod('birthdays', {
+    description: 'Lists the birthday people.',
     http: { path: '/birthdays', verb: 'get' },
     returns: { arg: 'birthdays', type: 'array' }
   });
@@ -45,7 +45,6 @@ module.exports = function(Person) {
       var now = new Date();
       var day = now.getDate();
       var month = now.getMonth() + 1;
-      var year = now.getYear();
       collection.aggregate([
       {
         $project: {
@@ -75,6 +74,7 @@ module.exports = function(Person) {
   };
 
   Person.remoteMethod('admissionAnniversary', {
+    description: 'Lists the admission anniversary people.',
     http: { path: '/admission-anniversary', verb: 'get' },
     returns: { arg: 'admission-anniversary', type: 'array' }
   });
