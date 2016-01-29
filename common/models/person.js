@@ -20,6 +20,7 @@ module.exports = function(Person) {
           "year": {
             "$year": "$birthday"
           },
+          "photo": 1,
           "active": 1
         }
       },
@@ -60,6 +61,7 @@ module.exports = function(Person) {
           "year": {
             "$year": "$admission"
           },
+          "photo": 1,
           "active": 1
         }
       },
