@@ -78,6 +78,6 @@ module.exports = function(Person) {
   Person.remoteMethod('admissionAnniversary', {
     description: 'Lists the admission anniversary people.',
     http: { path: '/admission-anniversary', verb: 'get' },
-    returns: { arg: 'admission-anniversary', type: 'array' }
+    returns: { arg: 'admissionAnniversary', type: 'array' }
   });
 };
