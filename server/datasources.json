@@ -4,11 +4,11 @@
     "connector": "memory"
   },
   "mongoDS": {
-    "host": "ds047365.mongolab.com",
-    "port": 47365,
-    "database": "heroku_0vcrhwhn",
-    "username": "demo",
-    "password": "demo3e4r5t6y7u",
+    "host": "localhost",
+    "port": 27017,
+    "database": "userdb",
+    "username": "user",
+    "password": "password",
     "name": "mongoDS1",
     "connector": "mongodb"
   }
